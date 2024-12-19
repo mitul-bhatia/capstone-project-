@@ -102,12 +102,107 @@
 .logo {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 10%);
+  transform: translate(-50%, -125%);
   font: 300 42px/1 IBM Plex Mono, monospace;
   letter-spacing: -1.68px;
   color: #fff;
   transition: all 0.3s ease;
 }
+
+
+/* .aah {
+  background-color: #000;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: IBM Plex Sans, sans-serif;
+  justify-content: start;
+  padding: 0 48px;
+}
+
+.header {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  padding-top: 24px;
+  flex-direction: column;
+  align-items: center;
+  font: 400 17px/1 IBM Plex Sans, sans-serif;
+  color: #fff;
+}
+
+.navcontainer {
+  border-radius: 16px;
+  background-color: rgba(32, 216, 22, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+  position: relative;
+  display: flex;
+  width: 1080px;
+  max-width: 100%;
+  align-items: flex-start;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+.navbg {
+  background-color: rgba(32, 216, 22, 0.06);
+  position: absolute;
+  inset: 0;
+  width: 1200px;
+  height: 92px;
+}
+
+.navlinks {
+  font-size: 0.9rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: auto 0;
+}
+
+.navlink {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Underline animation for links */
+
+
+/* Adding subtle pulse animation for links */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navlink:active {
+  animation: pulse 0.3s ease;
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 300 42px/1 IBM Plex Mono, monospace;
+  letter-spacing: -1.68px;
+  color: #fff;
+  z-index: 1;
+  transition: all 0.3s ease;
+} 
 
 
 .logo:hover {
@@ -175,7 +270,7 @@
   padding: 48px 0;
 }
 
-.herotitle {
+.title {
   background-color: #000;
   font: 400 120px/120px IBM Plex Sans, sans-serif;
   color: #fff;
@@ -184,7 +279,7 @@
   padding: 96px 0;
 }
 
-.heroimage {
+.image {
   aspect-ratio: 2;
   width: 100%;
   border-radius: 22px;
@@ -207,7 +302,7 @@
   min-height: 333px;
 }
 
-.project-image {
+.pe {
   aspect-ratio: 1.5;
   width: 100%;
   object-fit: cover;
@@ -252,13 +347,13 @@
 .projectsgrid {
   display: grid;
   gap: 16px;
-  /* or whatever suits your design */
+  
 }
 
 .projectsgrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Default layout for larger screens */
+
   gap: 16px;
 }
 
@@ -287,6 +382,20 @@
   margin-bottom: 20px;
   transform: scale(1.5);
   text-align: center;
+}
+
+  
+
+.title{
+  margin: 0;
+  animation: fadeSlideup 1s ease-out;
+}
+@keyframes fadeSlideup  {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
 }
 
 .servicesgrid {
@@ -421,13 +530,61 @@
   font: 400 15px/1 IBM Plex Sans, sans-serif;
   margin-top: 8px;
 }
-
 .inputgroup {
   display: flex;
   gap: 12px;
   margin-top: 32px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+/* correction needed 
+.forminput {
+  width: 56px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #000;
+  border: 1px so255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.36);
+  font: 400 20px/1.2 IBM Plex Sans, sans-serif;
+  text-align: center;
+}
+
+.submitbutton {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(32, 216, 22);
+  margin-top: 32px;
+  padding: 8px 16px;
+  font: 500 15px/1 IBM Plex Sans, sans-serif;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.skiplink {
+  color: rgb(24, 57, 30);
+  font: 500 15px/1 IBM Plex Sans, sans-serif;
+  margin-top: 32px;
+  text-decoration: none;
+}
+
+.skiplink { #need to learn to import fonts 
+  color: rgb(24, 57, 30);
+  font: 500 15px/1 IBM Plex Sans, sans-serif;
+  margin-top:
+  text-decoration: none;
+}
+
+.footer {
+  background-color;
+  padding: 96px 0 24px;
+} */
+.inputgroup {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .forminput {
@@ -622,7 +779,7 @@
 }
 
 .projectcard:hover .project-image {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @keyframes fadeIn {
@@ -663,15 +820,15 @@
   box-shadow: 0 10px 20px rgba(32, 216, 22, 0.1);
 }
 
-.project-image {
+.pe {
   aspect-ratio: 1.5;
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.projectcard:hover .project-image {
-  transform: scale(1.05);
+.projectcard:hover .pe {
+  transform: scale(1.1);
 }
 
 .projectinfo {
@@ -704,6 +861,8 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  
+
 }
 
 @media (max-width: 360px) {
@@ -713,7 +872,7 @@
   }
 }
 
-/* Animation Keyframes */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -761,4 +920,8 @@
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+.projectcard:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(32, 216, 22, 0.1);
 }
