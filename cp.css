@@ -109,7 +109,46 @@
   transition: all 0.3s ease;
 }
 
+/* 
 
+@media screen and (max-width: 768px) {
+  .navcontainer {
+    flex-direction: column;
+    padding: 4vw 3vw;
+    gap: 3vw;
+  }
+
+  .navlinks {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+  }
+
+  .logo {
+    position: relative;
+    transform: none;
+    left: auto;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navcontainer {
+    padding: 5vw 4vw;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .navlink::after {
+    height: 0.3vw;
+    bottom: -0.5vw;
+  }
+} */
 /* .aah {
   background-color: #000;
   display: flex;
@@ -286,7 +325,142 @@
   margin-top: 48px;
   object-fit: cover;
 }
+/* Extra Small Devices (Phones) - 320px */
+@media screen and (max-width: 320px) {
+  .navcontainer {
+    padding: 6vw 4vw;
+  }
+  
+  .navlinks {
+    gap: 6vw;
+  }
+  
+  .logo {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  
+  .title {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    padding: 2rem 0;
+  }
+  
+  .image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+}
 
+/* Small Devices (iPhone SE, etc) - 375px */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .navcontainer {
+    padding: 5vw 4vw;
+  }
+  
+  .navlinks {
+    gap: 5vw;
+  }
+  
+  .logo {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+  }
+  
+  .title {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+    padding: 2.5rem 0;
+  }
+  
+  .image {
+    width: 95vw;
+    aspect-ratio: 4/3;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+  }
+}
+
+/* Medium Devices (iPhone Pro Max, etc) - 425px */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .navcontainer {
+    padding: 4.5vw 4vw;
+  }
+  
+  .navlinks {
+    gap: 4.5vw;
+  }
+  
+  .logo {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+  
+  .title {
+    font-size: clamp(2.5rem, 7.5vw, 3.5rem);
+    padding: 3rem 0;
+  }
+  
+  .image {
+    width: 92vw;
+    aspect-ratio: 4/3;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+}
+
+/* Tablets - 768px */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .navcontainer {
+    padding: 4vw 3vw;
+  }
+  
+  .navlinks {
+    gap: 4vw;
+    justify-content: center;
+  }
+  
+  .logo {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+  }
+  
+  .title {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    padding: 4rem 0;
+  }
+  
+  .image {
+    width: 90vw;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    margin-top: 2.5rem;
+  }
+}
+
+/* Laptops/Small Desktops - 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navcontainer {
+    padding: 3vw 2.5vw;
+    width: 85vw;
+  }
+  
+  .navlinks {
+    gap: 3vw;
+  }
+  
+  .logo {
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+  }
+  
+  .title {
+    font-size: clamp(4rem, 7vw, 6rem);
+    padding: 5rem 0;
+  }
+  
+  .image {
+    width: 85vw;
+    aspect-ratio: 2;
+    border-radius: 20px;
+    margin-top: 3rem;
+  }
+}
 .projectsgrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
