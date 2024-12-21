@@ -45,7 +45,7 @@
 
 .navlinks {
   font-size: 0.9rem;
-  z-index: 1;
+  
   display: flex;
   align-items: center;
   gap: 32px;
@@ -823,7 +823,7 @@
   text-decoration: none;
 }
 
-.visuallyhidden {
+.vn {
   position: center;
   width: 1px;
   height: 1px;
@@ -835,21 +835,15 @@
 }
 
 @media (max-width: 600px) {
-  .herosection {
-    padding: 0 20px;
-  }
-
+  
   .navcontainer {
     font-size: 0.9rem;
     padding: 60px 20px 1rem 30px;
   }
 
-  .herotitle {
-    font-size: 40px;
-    line-height: 44px;
-  }
+  
 
-  .heroimage {
+  .image {
     margin-top: 40px;
   }
 
@@ -876,9 +870,7 @@
 }
 
 @media (max-width: 480px) {
-  .herosection {
-    padding: 0 1rem;
-  }
+  
 
   .navlinks {
     font-size: 0.9rem;
@@ -949,7 +941,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.projectcard:hover .project-image {
+.projectcard:hover .pe {
   transform: scale(1.2);
 }
 
@@ -980,7 +972,7 @@
 
 .projectcard {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 1fr auto;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
