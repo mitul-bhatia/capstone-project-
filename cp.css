@@ -34,6 +34,7 @@
   padding: 24px 32px;
 }
 
+
 .navbg {
   background-color: rgba(32, 216, 22, 0.06);
   position: absolute;
@@ -51,6 +52,7 @@
   margin: auto 0;
 }
 
+
 .navlink {
   color: #fff;
   text-decoration: none;
@@ -58,7 +60,6 @@
   transition: all 0.3s ease;
 }
 
-/* Underline animation for links */
 .navlink::after {
   content: '';
   position: absolute;
@@ -75,11 +76,13 @@
   transform: translateY(-2px);
 }
 
+
 .navlink:hover::after {
   width: 100%;
 }
 
-/* Adding subtle pulse animation for links */
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -95,8 +98,9 @@
 }
 
 .navlink:active {
-  animation: pulse 0.3s ease;
+  animation: nav 0.3s ease;
 }
+
 
 
 .logo {
@@ -208,12 +212,8 @@
   position: relative;
   transition: all 0.3s ease;
 }
-
-/* Underline animation for links */
-
-
-/* Adding subtle pulse animation for links */
-@keyframes pulse {
+*/
+@keyframes nav {
   0% {
     transform: scale(1);
   }
@@ -248,7 +248,6 @@
   text-shadow: 0 0 10px rgba(32, 216, 22, 0.5);
   letter-spacing: -0.5px;
 }
-
 
 
 
@@ -325,7 +324,7 @@
   margin-top: 48px;
   object-fit: cover;
 }
-/* Extra Small Devices (Phones) - 320px */
+
 @media screen and (max-width: 320px) {
   .navcontainer {
     padding: 6vw 4vw;
@@ -352,7 +351,6 @@
   }
 }
 
-/* Small Devices (iPhone SE, etc) - 375px */
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .navcontainer {
     padding: 5vw 4vw;
@@ -379,7 +377,7 @@
   }
 }
 
-/* Medium Devices (iPhone Pro Max, etc) - 425px */
+
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .navcontainer {
     padding: 4.5vw 4vw;
@@ -406,7 +404,7 @@
   }
 }
 
-/* Tablets - 768px */
+
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .navcontainer {
     padding: 4vw 3vw;
@@ -434,7 +432,6 @@
   }
 }
 
-/* Laptops/Small Desktops - 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .navcontainer {
     padding: 3vw 2.5vw;
@@ -1058,7 +1055,7 @@
     transform: translateY(0);
   }
 }
-
+/*animation such that the project looks good*/
 .projectcard {
   animation: fadeIn 0.5s ease-out forwards;
   opacity: 0;
